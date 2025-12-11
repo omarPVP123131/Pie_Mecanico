@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import type { LegParams } from "@/app/page"
+import { LegParams } from "@/lib/types"
 
 export function InfoCard({ params }: { params: LegParams }) {
   const totalLength = params.femurLength + params.tibiaLength
@@ -11,7 +11,7 @@ export function InfoCard({ params }: { params: LegParams }) {
   return (
     <Card className="absolute top-6 left-6 p-5 bg-slate-900/90 backdrop-blur-md shadow-2xl max-w-[320px] border-2 border-purple-500/30">
       <h3 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 flex items-center gap-2">
-        <span>🦿</span> Pierna Mecánica 3D
+        <span>🦿</span> Pierna Mecánica
       </h3>
 
       <div className="space-y-3 text-sm text-slate-300">
@@ -67,11 +67,22 @@ export function InfoCard({ params }: { params: LegParams }) {
           </div>
         </div>
 
-        <div className="pt-3 border-t border-purple-500/30">
-          <Badge variant="outline" className="text-xs border-purple-500/50 text-purple-300">
-            Modelo matemático paramétrico
-          </Badge>
-        </div>
+      <div className="pt-3 border-t border-purple-500/30">
+  <div className="flex flex-col gap-2 mt-2">
+    <Badge variant="outline" className="text-xs border-purple-500/50 text-purple-300">
+      Omar Palomares Velasco
+    </Badge>
+
+    <Badge variant="outline" className="text-xs border-purple-500/50 text-purple-300">
+      Diego Israel Morales Cervantes
+    </Badge>
+
+    <Badge variant="outline" className="text-xs border-purple-500/50 text-purple-300">
+      Hugo Abraham Salinas Garcia
+    </Badge>
+  </div>
+</div>
+
       </div>
     </Card>
   )
