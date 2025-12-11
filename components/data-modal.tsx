@@ -845,10 +845,10 @@ Versión 2.0 - ${new Date().toLocaleDateString('es-ES')}
           <div className="flex gap-2 mt-4 flex-wrap">
             {[
               { id: 'data', label: '📊 Datos', icon: '📊' },
-              { id: 'math', label: '📐 Matemáticas', icon: '📐' },
+             /*  { id: 'math', label: '📐 Matemáticas', icon: '📐' },
               { id: 'graphs', label: '📈 Gráficos', icon: '📈' },
               { id: 'rubric', label: '📋 Rúbrica', icon: '📋' },
-              { id: 'export', label: '💾 Exportar', icon: '💾' }
+              { id: 'export', label: '💾 Exportar', icon: '💾' } */
             ].map(tab => (
               <button
                 key={tab.id}

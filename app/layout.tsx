@@ -1,5 +1,4 @@
 import type React from "react"
-import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { StoredParamsProvider } from "@/context/StoredParamsContext";
@@ -9,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Simulador 3D - Pierna Mecánica Completa",
   description: "Simulador interactivo de pierna mecánica completa con ecuaciones matemáticas paramétricas avanzadas",
   generator: "v1",
